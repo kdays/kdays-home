@@ -18,7 +18,19 @@ spl_autoload_register(function ($class) {
 class Dispatcher {
     public static function run() {
         try {
-            $path = $_SERVER['PATH_INFO'] ?? '/';
+            $path = $_SERVER['PATH_INFO'] ?? null;
+            if ($path === null) {
+                $requestUri = $_SERVER['REQUEST_URI'] ?? '/';
+                $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
+                // 去掉 ?参数
+                $requestUri = explode('?', $requestUri, 2)[0];
+                // 去掉 /index.php 前缀
+                if (strpos($requestUri, $scriptName) === 0) {
+                    $path = substr($requestUri, strlen($scriptName));
+                } else {
+                    $path = $requestUri;
+                }
+            }
             $path = trim($path, '/');
             $segments = $path === '' ? [] : explode('/', $path);
 
