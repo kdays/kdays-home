@@ -1,0 +1,53 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: Sogou inst spider
+Allow: /
+
+User-agent: YisouSpider
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: applebot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: HaosouSpider
+Allow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: barkrowler
+Disallow: /
+
+User-agent: *
+Disallow: /

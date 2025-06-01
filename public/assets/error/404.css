@@ -1,0 +1,101 @@
+body,
+h1,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: square;
+}
+
+body {
+    background: #EEE;
+}
+
+#wrap {
+    background: #FFF;
+    margin: 60px 0 0 0;
+    padding: 10px 0 0 0;
+    height: 166px;
+}
+
+#inner {
+    background: url(akalin.jpg) no-repeat;
+    width: 480px;
+    height: 166px;
+    margin: 0 auto;
+    padding: 20px 0 0 200px;
+}
+
+#inner h1 {
+    font-weight: bold;
+    font-family: 黑体, SimHei, 微软雅黑;
+    color: #9E4B5A;
+    font-size: 26px;
+}
+
+#inner p {
+    color: #555;
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#inner a {
+    text-decoration: none;
+    color: #555;
+}
+
+#inner ul {
+    list-style: square;
+    color: #888;
+    font-size: 14px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+#inner li {
+    float: left;
+    margin-right: 50px;
+}
+
+#inner li:hover {
+    color: #333;
+}
+
+#inner li a {
+    color: #888;
+    line-height: 1.7;
+    vertical-align: middle;
+}
+
+#inner li a:hover {
+    color: #333;
+}
+
+#footer {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+#footer img {
+    margin-bottom: -3px;
+    box-shadow: 0 0 2px #AAA;
+}
+
+#footer a {
+    margin-right: 10px;
+    opacity: .8;
+    color: #888;
+}
+
+#footer a:hover {
+    opacity: 1;
+}
+
+#footer p {
+    margin-top: 11px;
+    color: #AAA;
+}

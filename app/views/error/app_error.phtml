@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>应用错误</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff3f3; color: #444; }
+        .container { max-width: 600px; margin: 80px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #f5c6cb; padding: 40px 30px; text-align: center; }
+        h1 { color: #e67e22; font-size: 2.5em; margin-bottom: 0.2em; }
+        .msg { color: #c0392b; font-size: 1.2em; margin: 1em 0; }
+        .trace { color: #888; font-size: 0.95em; margin-top: 2em; text-align: left; background: #f9ecec; border-radius: 6px; padding: 1em; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>应用发生错误</h1>
+        <div class="msg"><?= isset($errorMsg) ? htmlspecialchars($errorMsg) : '未知错误' ?></div>
+        <?php if (!empty($errorTrace)) : ?>
+        <div class="trace">
+            <strong>错误堆栈：</strong><br>
+            <pre><?= htmlspecialchars($errorTrace) ?></pre>
+        </div>
+        <?php endif; ?>
+    </div>
+</body>
+</html>

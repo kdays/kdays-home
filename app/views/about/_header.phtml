@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>关于我们 - KDays </title>
+                <link rel="stylesheet" href="/assets/home.css">
+
+    </head>
+
+    <body class="web-about">
+        <div class="about-header-center">
+            <div class="site-logo" aria-label="KDays Logo"></div>
+        </div>
+        <div class="about-nav-bar">
+            <ul class="about-nav-list">
+                <li>
+                    <a class="about-nav-link <?=$active == 'home' ? 'active' : '' ?>" href="/about/">关于我们
+                        <span class="about-nav-en">About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="about-nav-link <?=$active == 'agreement' ? 'active' : '' ?>" href="/about/agreement">使用协议
+                        <span class="about-nav-en">User Agreement</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="about-nav-link  <?=$active == 'contact' ? 'active' : '' ?>" href="/about/contact">联系我们
+                        <span class="about-nav-en">Contact Us</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
