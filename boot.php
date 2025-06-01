@@ -1,5 +1,7 @@
 <?php
 define('APP_NAMESPACE', 'Giftia');
+define('ASSETS_HOST', 'https://misaka.ikdays.com/home');
+define('ASSETS_BUILD', '250602');
 
 spl_autoload_register(function ($class) {
     $prefix = 'Giftia\\';
@@ -51,7 +53,7 @@ class Dispatcher {
             self::onAppError($e);
         }
     }
-    
+
     protected static function renderTpl(string $tplFile, array $data = []) {
         (function () use ($tplFile, $data) {
             extract($data, EXTR_SKIP);
